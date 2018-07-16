@@ -33,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
         // Find the View that shows the numbers category
         TextView numbers = findViewById(R.id.numbers);
 
-        TextView family = findViewById(R.id.family);
-        TextView colors = findViewById(R.id.colors);
-        TextView phrases = findViewById(R.id.phrases);
-
         // Set a click listener on that View
         numbers.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
@@ -47,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView family = findViewById(R.id.family);
         family.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView colors = findViewById(R.id.colors);
         colors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView phrases = findViewById(R.id.phrases);
         phrases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
